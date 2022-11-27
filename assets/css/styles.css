@@ -1,0 +1,72 @@
+body {
+    /* padding: 100px; */
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 150%;
+    color: rgb(11, 11, 11);
+    background: #b5b3a0;
+    position:left;
+  }
+  
+  h2 {
+    font-size: 12px;
+    right: 0;
+    right: 0%;
+  }
+  
+ /* h3 {
+    font-size: 30px;
+  }
+  
+  /* Giving our navbar some padding and a background color */
+  /*.navbar {
+    padding: 10px;
+    background: #e8ebef;
+  }/*
+  
+  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
+  .container {
+    display: inline-block;
+    padding: 20px;
+    margin-right: 10px;
+    margin-left: 0px;
+    cursor: pointer;
+    background: rgb(241, 240, 245);
+    border-radius: 3px;
+  }
+  
+  .container-data {
+    background: white;
+  }
+
+  .container-comparison{
+    background: rgb(219, 212, 212);
+  }
+
+  
+  
+  /* Styling the header, giving it a height, a background color, and some top padding */
+  .header {
+    height: 200px;
+    padding-top: 20px;
+    background: #cdcdcd;
+  }
+  
+  /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
+  .header h1 {
+    padding: 60px;
+    margin: 0;
+    color: #000;
+    text-align: center;
+  }
+  
+  /* Giving the .post element margin on 3 sides */
+  
+  
+  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
+  @media (max-width: 480px) {
+    
+  }
+  

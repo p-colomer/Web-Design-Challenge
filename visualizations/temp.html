@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Add a title here -->
+    <title>Temperature</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <!-- End of navbar -->
+    <nav class="navbar">
+      <div class="col-md-4">
+        <form>
+          <input class="button-design" type="button" value="Latitude" onclick="window.location.href='../index.html'" />
+        </form>
+        
+      </div>
+        
+      <div class="col-md-3">
+        <div class="dropdown">
+          <button class="btn-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="./temp.html">Max Temperature</a></li>
+             <li><a href="./humidity.html">Humidity</a></li>
+             <li><a href="./cloudiness.html">Cloudiness</a></li>
+             <li><a href="./wind.html">Wind Speed</a></li>
+          </ul>
+        </div> 
+      </div>
+      <div class="col-md-2">
+        <form>
+          <input class="button-design" type="button" value="Comparison" onclick="window.location.href='../comparison.html'" />
+        </form> 
+      </div>
+      <div class="col=md-2">
+        <form>
+          <input class="button-design" type="button" value="Data" onclick="window.location.href='../data.html'" />
+        </form>
+      </div>
+      <br>  
+    </nav>
+    <!-- End of navbar -->
+
+     <!-- <a class="navbar-title" href="#">Latitude</a> -->
+    <!-- Start of container -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <header>
+            <h1>Max Temperature</h1>
+          </header>
+          <section class="description2">
+            <figure id="main-picture2">
+              <img id="pict2" src="../assets/images/Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)">
+            </figure>
+            <p>
+              As expected, the weather becoms significantly warmer as one 
+              approaches the equator (0 Deg. Latitude). More interestingly,
+              however, is the fact that the southern hemisphere tends to be 
+              warmer this time of the year than the northern hemisphere. 
+              This may be due to the tilt of the earth at the time of the year 
+              this data was agthered.
+            </p>
+            
+          </section>
+        </div>
+      
+        <div class="col-md-4">
+          <header>
+            <h2>Visualisations</h2>
+          </header>
+          <div class="row">
+            <div class="col-xs-3 col-sm-3 col-md-6">
+              <figure id="vis-pict1">
+                <a href="temp.html">
+                  <img id="pict1" src="../assets/images/Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)" style="width:150px;height:150px;">
+                </a>
+              </figure>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-6">
+              <figure id="vis-pict1">
+                <a href="humidity.html">
+                  <img id="pict2" src="../assets/images/Fig2.png" alt="City Latitude vs. Humidity" style="width:150px;height:150px;">
+                </a>
+              </figure>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-6">
+              <figure id="vis-pict1">
+                <a href="cloudiness.html">
+                  <img id="pict3" src="../assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" style="width:150px;height:150px;">
+                </a>
+              </figure>
+            </div>
+            <div class="col-xs-3 col-sm-3 col-md-6">
+              <figure id="vis-pict1">
+                <a href="wind.html">
+                  <img id="pict4" src="../assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" style="width:150px;height:150px;">
+                </a>
+              </figure>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Start of container -->
+
+          <!-- Start of Visualizations imageNav Area -->
+          <!-- End of the Visualizations imageNav Area -->
+
+    <!-- End of container -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
