@@ -1,72 +1,213 @@
-body {
-    /* padding: 100px; */
-    /* margin-left: 20px;
-    margin-right: 20px; */
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 150%;
-    color: rgb(11, 11, 11);
-    background: #b5b3a0;
-    position:left;
+/* ----DEFAULT ELEMENT STYLING START---- */
+html {
+    /* Positioning */
+    position: relative;
+    /* Box-model */
+    min-height: 100%;
   }
-  
-  h2 {
-    font-size: 12px;
-    right: 0;
-    right: 0%;
+  body {
+    /* Positioning */
+    margin-bottom: 150px;
+    /* Typography */
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    /* Visual */
+    background-color: #ededed;
   }
-  
- /* h3 {
-    font-size: 30px;
+  /* Media query for body */
+  @media only screen and (max-width: 767px) {
+    /* Set background color to white on small screens */
+    body {
+      /* Visual */
+      background-color: #fff;
+    }
   }
-  
-  /* Giving our navbar some padding and a background color */
-  /*.navbar {
-    padding: 10px;
-    background: #e8ebef;
-  }/*
-  
-  /* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-  .container {
-    display: inline-block;
-    padding: 20px;
-    margin-right: 10px;
-    margin-left: 0px;
-    cursor: pointer;
-    background: rgb(241, 240, 245);
-    border-radius: 3px;
+  /* ----DEFAULT ELEMENT STYLING END---- */
+  /* ----NAV START---- */
+  .navbar-custom {
+    background-color: #fff;
   }
-  
-  .container-data {
-    background: white;
-  }
-
-  .container-comparison{
-    background: rgb(219, 212, 212);
-  }
-
-  
-  
-  /* Styling the header, giving it a height, a background color, and some top padding */
-  .header {
-    height: 200px;
+  #logo {
+    /* Box-model */
+    height: 60px;
     padding-top: 20px;
-    background: #cdcdcd;
+    padding-bottom: 5px;
+    /* Positioning */
+    margin-left: 70px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    /* Visual */
+    background: #9da3a3;
   }
-  
-  /* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-  .header h1 {
-    padding: 60px;
-    margin: 0;
-    color: #000;
+  /* Logo hover state */
+  #logo:hover {
+    /* Visual */
+    opacity: 0.7;
+  }
+  .navbar-right-custom {
+    /* Box-model */
+    padding-top: 6px;
+    padding-right: 20px;
+    /* Typography */
+    font-family: Arial;
+    font-weight: lighter;
+  }
+  /* Nav element hover state */
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #0a0a0a;
+  }
+  /* Media query for nav */
+  @media only screen and (max-width: 767px) {
+    .navbar-header {
+      background-color: #93a1a0;
+    }
+    #logo {
+      width: 100%;
+      /* Box-model */
+      height: 60px;
+      padding-top: 20px;
+      padding-bottom: 5px;
+      /* Positioning */
+      margin-left: 0;
+      font-family: Georgia, Times, "Times New Roman", serif;
+      /* Typography */
+      font-size: 24px;
+      font-weight: bold;
+      color: #fff;
+      /* Visual */
+      background: #7e8585;
+    }
+  }
+  /* -----NAV END---- */
+  /* ----DESCRIPTION START---- */
+  .description-header {
+    /* Positioning */
+    margin-bottom: 33px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+    font-size: 32px;
+    font-weight: bold;
+    color: #121212;
+  }
+  .description-content {
+    /* Box-model */
+    padding: 30px;
+    /* Positioning */
+    margin-top: 32px;
+    /* Visual */
+    background-color: rgb(181, 173, 173);
+  }
+  .description-content > p {
+    /* Box-model */
+    padding-top: 20px;
+    /* Typography */
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(8, 8, 8);
+  }
+  .description-text {
+    padding-bottom: 20px;
+  }
+  #description-image {
+    /* Positioning */
+    float: left;
+    /* Box-model */
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  /* Description content media query */
+  @media only screen and (max-width: 767px) {
+    /* override default class styling for positioning/padding */
+    .description-content {
+      /* Box-model */
+      padding: 0;
+      /* Positioning */
+      margin-top: 0;
+    }
+  }
+  /* ----DESCRIPTION END---- */
+  /* ----IMAGE NAV START---- */
+  #imageNav-area {
+    width: 100%;
+    /* Box-model */
+    padding: 30px 30px 43px;
+    /* Positioning */
+    margin-top: 32px;
+    /* Visual */
+    background-color: #fff;
+  }
+  .imageNav-header {
+    /* Positioning */
+    margin-bottom: 15px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+    font-size: 25px;
+    font-weight: bold;
+    color: #989f9e;
+  }
+  .imageNav-photo {
+    width: 140px;
+    /* Box-model */
+    height: 140px;
+  }
+  .imageNav-photo:hover {
+    /* Visuals */
+    opacity: 0.6;
+  }
+  .imageNav-photo.active {
+    /* Visuals */
+    border: 2px solid #959a9a;
+  }
+  #images {
+    /* Box-model */
+    padding-top: 15px;
+    /* Typography */
     text-align: center;
   }
-  
-  /* Giving the .post element margin on 3 sides */
-  
-  
-  /* Adding media queries to show the drop-down, and hide the navbar when the screen is smaller than 480 pixels */
-  @media (max-width: 480px) {
-    
+  /* ----IMAGE NAV END---- */
+  /* ----COMPARISON START---- */
+  .comparison-image:hover {
+    opacity: 0.6;
   }
+  .comparison-header {
+    /* Positioning */
+    margin-bottom: 10px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    /* Typography */
+    font-size: 20px;
+    font-weight: bold;
+    color: #939b9b;
+    text-align: center;
+  }
+  /* ----COMPARISON END---- */
+  /* ----FOOTER START---- */
+  .footer {
+    /* Positioning */
+    position: absolute;
+    bottom: 0;
+    /* Box-model */
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+    /* Visual */
+    background-color: #666;
+  }
+  .text-muted-footer {
+    /* Positioning */
+    margin-top: 15px;
+    /* Typography */
+    color: #fff;
+  }
+  .two-toned-footer-color {
+    /* Box-model */
+    height: 6px;
+    padding-top: 3px;
+    /* Visual */
+    background-color: #879090;
+  }
+  /* ----FOOTER END---- */
   

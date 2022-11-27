@@ -18,40 +18,41 @@
   </head>
 
   <body>
-    <!-- Start of navbar -->
-    <!-- End of navbar -->
-    <nav class="navbar">
-      <div class="col-md-4">
-        <form>
-          <input class="button-design" type="button" value="Latitude" onclick="window.location.href='../index.html'" />
-        </form>
-        
-      </div>
-        
-      <div class="col-md-3">
-        <div class="dropdown">
-          <button class="btn-dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </button>
-          <ul class="dropdown-menu">
-            <li><a href="./temp.html">Max Temperature</a></li>
-             <li><a href="./humidity.html">Humidity</a></li>
-             <li><a href="./cloudiness.html">Cloudiness</a></li>
-             <li><a href="./wind.html">Wind Speed</a></li>
-          </ul>
-        </div> 
-      </div>
-      <div class="col-md-2">
-        <form>
-          <input class="button-design" type="button" value="Comparison" onclick="window.location.href='../comparison.html'" />
-        </form> 
-      </div>
-      <div class="col=md-2">
-        <form>
-          <input class="button-design" type="button" value="Data" onclick="window.location.href='../data.html'" />
-        </form>
-      </div>
-      <br>  
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href='../index.html' id="logo">Latitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="temp.html">Max Temperature</a></li>
+                  <li><a href="humidity.html">Humidity</a></li>
+                  <li><a href="cloudiness.html">Cloudiness</a></li>
+                  <li><a href="wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="../comparison.html">Comparison</a></li>
+              <li><a href="../data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
     </nav>
     <!-- End of navbar -->
 
@@ -80,39 +81,19 @@
         </div>
       
         <div class="col-md-4">
-          <header>
-            <h2>Visualisations</h2>
-          </header>
-          <div class="row">
-            <div class="col-xs-3 col-sm-3 col-md-6">
-              <figure id="vis-pict1">
-                <a href="temp.html">
-                  <img id="pict1" src="../assets/images/Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)" style="width:150px;height:150px;">
-                </a>
-              </figure>
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="temp.html"><img src="../assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="humidity.html"><img src="../assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="cloudiness.html"><img src="../assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="wind.html"><img src="../assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+              </div>
             </div>
-            <div class="col-xs-3 col-sm-3 col-md-6">
-              <figure id="vis-pict1">
-                <a href="humidity.html">
-                  <img id="pict2" src="../assets/images/Fig2.png" alt="City Latitude vs. Humidity" style="width:150px;height:150px;">
-                </a>
-              </figure>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-6">
-              <figure id="vis-pict1">
-                <a href="cloudiness.html">
-                  <img id="pict3" src="../assets/images/Fig3.png" alt="City Latitude vs. Cloudiness" style="width:150px;height:150px;">
-                </a>
-              </figure>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-6">
-              <figure id="vis-pict1">
-                <a href="wind.html">
-                  <img id="pict4" src="../assets/images/Fig4.png" alt="City Latitude vs. Wind Speed" style="width:150px;height:150px;">
-                </a>
-              </figure>
-            </div>
-          </div>
+          </section>
       </div>
     </div>
 
